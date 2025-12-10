@@ -7,8 +7,14 @@ import { initChart, updateChart } from "./uiChart.js";
 let entries = [];
 
 function syncUI() {
-  renderTable(entries);
+  renderTable(entries, handleDeleteEntry);
   updateChart(entries);
+}
+
+function handleDeleteEntry(id) {
+  entries = entries.filter(e => e.id !== id);
+  saveEntries(entries); // overwrite localStorage with new array[web:128][web:134]
+  syncUI();
 }
 
 function handleNewEntry(rawData) {
