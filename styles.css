@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 8px;
+}
+
+input,
+textarea,
+select,
+button {
+  padding: 6px;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#entries-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#entries-table th,
+#entries-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 14px;
+}
+
+#entries-table th {
+  background-color: #f4f4f4;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+}
